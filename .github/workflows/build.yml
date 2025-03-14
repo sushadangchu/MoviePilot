@@ -41,6 +41,9 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+        env:
+          DOCKER_USERNAME: qq746620536
+          DOCKER_PASSWORD: ${{ secrets.dckr_pat_zVEirEl7gxjEvKOlMpg1oa4J1LM }}
 
       - name: Build Image
         uses: docker/build-push-action@v5
